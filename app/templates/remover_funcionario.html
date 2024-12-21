@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load django_bootstrap5 %}
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Remove Employee</title>
+        {% bootstrap_css %}
+        {% bootstrap_javascript %}
+    </head>
+<body>
+        <h2> Employee: {{fun.nome }} </h2>
+        <li>CPF: {{ fun.cpf }}</li>
+        <li>E-mail: {{ fun.email }}</li>
+        <li>Salary: {{ fun.remuneracao }}</li>
+
+    <form method="post">
+        {% csrf_token %}
+        <input type = "submit" class = "btn btn-primary" value = "Remove">
+        <button type="button" class="btn btn-success" onClick="history.go(-1)">Go Back</button>
+    </form>
+</body>
+</html>
