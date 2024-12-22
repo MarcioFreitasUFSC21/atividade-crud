@@ -5,14 +5,21 @@
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>The Employee Listing</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
      {% bootstrap_css %} 
      {% bootstrap_javascript %} 
+     <style type = "text/css">
+        html{margin:5%;
+            } 
+    </style> 
 </head> 
 <body> 
-    <h2> Employee: {{ fun.nome }} </h2> 
+    <h2>&#128513;</h2>
+    <h2> Employee: {{ fun.name }} </h2> 
     <li>CPF: {{ fun.cpf }}</li> 
+    <li>Birthday_date: {{ fun.birthday_date }}</li> 
     <li>E-mail: {{ fun.email }}</li> 
-    <li>Salary: {{ fun.remuneracao }}</li> 
-    <button type="button" class="btn btn-success" onClick="history.go(-1)"> Go Back </button>
+    <li>Salary: {{ fun.salary }}</li> 
+    <button type="button" class="btn btn-success" onClick="history.go(-1)">Go Back</button>
 </body> 
 </html> 

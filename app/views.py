@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.views.generic import CreateView, ListView, UpdateView, DetailView, DeleteView
+from django.views.generic import (CreateView, ListView, UpdateView, DetailView, DeleteView)
 from django.urls import reverse_lazy
 from .models import Funcionario
 
@@ -24,7 +24,7 @@ class FuncionarioListView(ListView):
 #***********************************************
 class FuncionarioUpdateView(UpdateView):
     model = Funcionario
-    fields = ("nome", "cpf", "email", "remuneracao")
+    fields = ("name", "cpf", "email", "salary")
     template_name = "form_funcionario.html"
     success_url = reverse_lazy("lista_funcionarios")
 #*****************************************************

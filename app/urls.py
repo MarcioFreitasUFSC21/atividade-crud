@@ -1,5 +1,5 @@
 from django.urls import path, include
-from .views import FuncionarioCreateView, FuncionarioListView, FuncionarioUpdateView, FuncionarioDetailView, FuncionarioDeleteView 
+from .views import (FuncionarioCreateView, FuncionarioListView, FuncionarioUpdateView, FuncionarioDetailView, FuncionarioDeleteView)
 #***********************************************************************************
 urlpatterns = [
     path("form_funcionario", FuncionarioCreateView.as_view(), name = "form_funcionario"),

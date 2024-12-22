@@ -4,19 +4,24 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Remove Employee</title>
+        <title>Employee</title>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <style type = "text/css">
+            html{margin:5%;
+                } 
+        </style>
         {% bootstrap_css %}
         {% bootstrap_javascript %}
     </head>
 <body>
-        <h2> Employee: {{fun.nome }} </h2>
-        <li>CPF: {{ fun.cpf }}</li>
-        <li>E-mail: {{ fun.email }}</li>
-        <li>Salary: {{ fun.remuneracao }}</li>
-
+    <span style='font-size:100px;'>&#128546;</span>
+    <h2> Employee: {{fun.name }} </h2>
+    <li>CPF: {{ fun.cpf }}</li>
+    <li>E-mail: {{ fun.email }}</li>
+    <li>Salary: {{ fun.salary }}</li>
     <form method="post">
         {% csrf_token %}
-        <input type = "submit" class = "btn btn-primary" value = "Remove">
+        <input type = "submit" class = "btn btn-danger" value = "Remove">
         <button type="button" class="btn btn-success" onClick="history.go(-1)">Go Back</button>
     </form>
 </body>
