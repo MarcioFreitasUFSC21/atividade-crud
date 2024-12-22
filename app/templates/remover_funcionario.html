@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Employee</title>
+        <title> Remove Employee</title>
         <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
         <style type = "text/css">
             html{margin:5%;
@@ -14,11 +14,11 @@
         {% bootstrap_javascript %}
     </head>
 <body>
-    <span style='font-size:100px;'>&#128546;</span>
-    <h2> Employee: {{fun.name }} </h2>
-    <li>cpf: {{ fun.cpf }}</li>
-    <li>e-mail: {{ fun.email }}</li>
-    <li>salary: {{ fun.salary }}</li>
+    <center><span style='font-size:100px;'>&#128546;</span></center>
+    <h2> Remove Employee: {{funcionario.name }}</h2>
+     <li>cpf: {{ funcionario.cpf }} </li>
+     <li>e-mail: {{ funcionario.email }} </li>
+     <li>salary: {{ funcionario.salary }} </li>
     <form method="post">
         {% csrf_token %}
         <input type = "submit" class = "btn btn-danger" value = "Remove">
