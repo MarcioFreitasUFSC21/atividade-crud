@@ -31,7 +31,7 @@
                         <li>{{ funcionario.name }}</li>
                     </td>
                     <td>
-                        <a href="{% url "listar_funcionario" pk=funcionario.id %}" class = "btn btn-primary">Shown data</a>
+                        <a href="{% url "listar_funcionario" pk=funcionario.id %}" class = "btn btn-primary">Show data</a>
                         <a href= "{% url "editar_funcionario" pk=funcionario.id %}" class = "btn btn-success">Edit</a>
                         <a href= "{% url "remover_funcionario" pk=funcionario.id %}" class = "btn btn-danger">Remove</a>
                         <hr>
